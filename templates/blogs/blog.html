@@ -1,0 +1,90 @@
+{% extends 'blogs/layout.html' %}
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/blog.css')}}" type="text/css"/>
+{% endblock %}
+
+{% block main %}
+ 
+    <div class="blogs">
+        <div class="main-blog">
+            <div class="main-blog-pic">
+                <img src="{{url_for('static', filename='images/bg/girls.jpg')}}"/>
+            </div>
+            <div class="main-blog-content">
+                <h1> How to use chotuURL free API </h1>
+                <p> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius non nobis numquam consequatur, earum vel est quibusdam a voluptas aliquam quia repellat veniam commodi dolorem similique quae sed aliquid perferendis!
+                </p>
+                <button> Read More </button>
+            </div>
+        </div>
+        <div class="blog-list">
+                <div class="blog blog1">
+                    <img src="{{url_for('static', filename='images/bg/wow.jpg')}}"/>
+                    <h3>chotoURL | Features/Capabilites</h3>
+                    <p>
+                        While URL shortening offers many advantages, it's essential to consider potential drawbacks, such as the risk of link breakage if the shortening service goes offline, and the loss of transparency when users can't see the full destination URL. Careful consideration of the specific use case and potential risks is important when deciding whether to use URL shortening.
+                    </p>
+                    <button>Read More</button>
+                </div>
+                <div class="blog blog2">
+                    <img src="{{url_for('static', filename='images/bg/lin.jpg')}}"/>
+                    <h3>Why you need a Url Shortener?</h3>
+                    <p>
+                        shortened URLs are much shorter than their original counterparts, which is particularly useful in situations with character limits, such as on social media platforms like Twitter. They help save space in text messages, tweets, and other forms of communication.
+            
+            Improved User Experience: Long and complex 
+                    </p>
+                    <button>Read More</button>
+
+                </div>
+                <div class="blog blog3">
+                    <img src="{{url_for('static', filename='images/bg/qrcode.jpg')}}"/>
+                    <h3>What are Qr codes? </h3>
+                    <p>
+                        A QR code, short for "Quick Response code," is a two-dimensional barcode that can store various types of information. QR codes were invented in Japan in the 1990s and have since become widespread and popular due to their versatility and ease of use. QR codes consist of black squares arranged on a white background, typically in a square shape, and they can be scanned by a QR code reader or scanner, often found in smartphones and other devices.
+            
+            
+                    </p>
+                    <button>Read More</button>
+
+                </div>
+                <div class="blog blog4">
+                    <img src="{{url_for('static', filename='images/bg/writing.jpg')}}"/>
+                    <h3>How do i shorten Urls for free? </h3>
+                    <p>
+                        tion for error code meanings and how to handle them in your code.
+            
+                        Test and Debug: During development, test your code with various scenarios and edge cases to ensure that it works as expected. Debug any issues that arise and refine your code accordingly.        </p>
+                        <button>Read More</button>
+
+                    </div>
+                <div class="blog blog5">
+                    <img src="{{url_for('static', filename='images/bg/why.jpg')}}"/>
+                    <h3>How to use chotuURL Free API?</h3>
+                    <p>
+                        Using APIs can greatly expand the capabilities of your software applications by allowing them to interact with external services and data sources. However, it's crucial to follow best practices, adhere to the API provider's terms of use, and maintain proper error handling and security practices when working with APIs.        </p>
+                        <button>Read More</button>
+
+                    </div>
+                <div class="blog blog6">
+                    <img src="{{url_for('static', filename='images/bg/girlwithphone.jpg')}}"/>
+                    <h3>Benifits of Url Shortening</h3>
+                    <p>
+                        Space Efficiency: One of the primary benefits of URL shortening is that it reduces the length of a URL, making it shorter and more concise. This can be particularly useful in situations with character limits, such as on social media platforms like Twitter, where brevity is essential.
+            
+            
+                    </p>
+                    <button>Read More</button>
+
+                </div>
+           
+                
+        </div>
+        <div class="control-buttons">
+            <button> &lt;&lt; Previous </button> <button>  Next &gt;&gt;</button>
+        </div>
+    </div>
+
+{% endblock %}

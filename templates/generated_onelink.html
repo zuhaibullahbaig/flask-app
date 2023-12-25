@@ -1,0 +1,32 @@
+{% extends 'blogs/layout.html' %}
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/generated_onelink.css')}}">
+{% endblock %}
+
+{% block main %}
+    <div class="generated_onelink">
+        <div class="generated_onelink_container">
+            <h1> Link-In-Bio </h1>
+            <p> Access your Link-in-Bio From here</p>
+            <p id="url" style="word-wrap: break-word;"> {{data.url}} </p>   
+            <p id="text-update"> </p>
+
+            <button id="copy"> Copy </button>
+           <a href="/"> <button> Home</button> </a>
+        </div>
+    </div>
+
+    <script>
+          document.getElementById("copy").addEventListener("click", function() {
+            var textToCopy = document.getElementById("url").innerText;
+            var textarea = document.createElement("textarea");
+            textarea.value = textToCopy;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            document.getElementById('text-update').innerHTML = 'copied';
+        });
+    </script>
+{% endblock %}

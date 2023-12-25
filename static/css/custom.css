@@ -1,0 +1,77 @@
+.track-link{
+    max-width: 1200px;
+    margin: 1cm auto;
+    min-height: 70vh;
+    padding: 5px 10px;
+}
+
+.track-link p{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 0.7cm;
+}
+
+.track-link h1{
+    font-family: 'Young Serif';
+    font-size: 35px;
+    font-weight: light;
+    text-align: center;
+}
+
+.track-link img{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.image_container{
+    text-align: center;
+    width: 100%;
+}
+
+form{
+    margin: 0.5cm auto;
+    width: 100%;
+}
+input{
+    max-width: 300px;
+    width: 95%;
+    margin: 5px auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight:  bold;
+    padding: 10px 20px;
+
+}
+button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underlines from links */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded button corners */
+    font-size: 16px; /* Button text size */
+    font-weight: bold;
+    cursor: pointer; /* Show hand cursor on hover */
+}
+button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+  }
+  
+
+  h3{
+    padding: 10px 20px;
+    background-color: rgb(179, 179, 16);
+    width: fit-content;
+    border-radius: 5px;
+    margin-top: 0.2cm;
+  }
+@media screen and (max-width:600px) {
+    .track-link p{
+        font-size: 18px;
+    }
+    .track-link h1{
+        font-size: 26px;
+    }
+}

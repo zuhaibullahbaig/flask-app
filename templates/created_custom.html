@@ -1,0 +1,18 @@
+{% extends 'blogs/layout.html' %}
+
+{% block header %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/custom.css')}}">
+{% endblock %}
+{% block main %}
+    <div class="track-link">
+        <p>This is your custom backlink</p>
+        <h3> {{link_url}}</h3>
+        <p style="margin-top: 0.5cm;">Track your link clicks from here</p>
+
+        <h3> {{link_analytics_url}}</h3>
+
+      
+        <p style="margin-top: 0.5cm;">{{message}}</p>
+
+    </div>
+{% endblock %}

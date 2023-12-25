@@ -1,0 +1,201 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{url_for('static', filename='images/favicon.ico')}}" type="image/x-icon">
+
+{% endblock %}
+
+{% block main %}
+<nav>
+    <div class="nav-wrapper" id="navbar">
+        <h1 class="logo"> chotuURL  </h1>
+        <ul class="nav-links">
+            <a href="/">   <li> Home  </li> </a>
+
+            <a href="/products">   <li> Products  </li> </a>
+          <a href="/about">  <li> About </li> </a>
+       
+
+        </ul>
+        <!-- <div class="nav-btns">
+            <button class="signup"> Contact </button>
+        </div> -->
+        <div class="mobile-nav-btns" id="nav-btn">
+            <i class="fa fa-bars fa-2x" id="mobile-btn"></i>
+            <i class="fa fa-close fa-2x" id="close-btn"></i>
+        </div>
+        
+    </div>
+  
+</nav>
+<div class="hero-container">
+    <div class="hero">
+        <form class="hero-form" method='POST'action="/shorten">
+            <h1> Shorten Your Links</h1>
+            <input type="text" placeholder="Paste/Write your link here " name="link">
+            <button> Shorten </button>
+        </form>
+        <div class="hero-features">
+            <h2> What Else? </h2>
+            <div class="home-features">
+                <div class="qrcode">
+                    <i class="fas fa-qrcode"></i>
+                    <div class="qr-code-content">
+                    <h3> QR Code </h3>
+                    <a href="/qrcodegenerator">  <button> Create Now </button> </a>
+                     </div>
+                </div>
+                <div class="onelinks">
+                    <i class="fas fa-link"></i>
+                    <div class="qr-code-content">
+                    <h3>Link-in-Bio </h3>
+                   <a href="/onelinks"> <button> Create Now </button> </a> 
+                   </div>
+                </div>
+                <div class="onelinks">
+                    <i class="fas fa-code"></i>
+                    <div class="qr-code-content">
+
+                    <h3> Custom Link </h3>
+
+                    <a href="/custom"><button> Create Now </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+      
+
+    </div>
+</div>
+<!-- 
+<h1 class="popular-blogs-title" style="padding-bottom:0cm;"> Popular Blogs </h1>
+<h1 class="popular-blogs-title" style="margin-top: 0; font-size: 23px; color: black; font-family: 'Raleway';"> Our blogs provide explanations for frequently asked questions about our service.</h1>
+
+<div class="popular-blogs">
+    <div class="blog blog1">
+        <img src="{{url_for('static', filename='images/bg/wow.jpg')}}"/>
+        <h3>chotoURL | Features/Capabilites</h3>
+        <p>
+            While URL shortening offers many advantages, it's essential to consider potential drawbacks, such as the risk of link breakage if the shortening service goes offline, and the loss of transparency when users can't see the full destination URL. Careful consideration of the specific use case and potential risks is important when deciding whether to use URL shortening.
+
+
+
+
+        </p>
+    </div>
+    <div class="blog blog2">
+        <img src="{{url_for('static', filename='images/bg/lin.jpg')}}"/>
+        <h3>Why you need a Url Shortener?</h3>
+        <p>
+            shortened URLs are much shorter than their original counterparts, which is particularly useful in situations with character limits, such as on social media platforms like Twitter. They help save space in text messages, tweets, and other forms of communication.
+
+Improved User Experience: Long and complex 
+        </p>
+    </div>
+    <div class="blog blog3">
+        <img src="{{url_for('static', filename='images/bg/qrcode.jpg')}}"/>
+        <h3>What are Qr codes? </h3>
+        <p>
+            A QR code, short for "Quick Response code," is a two-dimensional barcode that can store various types of information. QR codes were invented in Japan in the 1990s and have since become widespread and popular due to their versatility and ease of use. QR codes consist of black squares arranged on a white background, typically in a square shape, and they can be scanned by a QR code reader or scanner, often found in smartphones and other devices.
+
+Link-in-Bio
+￼Create Now
+
+        </p>
+    </div>
+    <div class="blog blog4">
+        <img src="{{url_for('static', filename='images/bg/writing.jpg')}}"/>
+        <h3>How do i shorten Urls for free? </h3>
+        <p>
+            tion for error code meanings and how to handle them in your code.
+
+            Test and Debug: During development, test your code with various scenarios and edge cases to ensure that it works as expected. Debug any issues that arise and refine your code accordingly.        </p>
+    </div>
+    <div class="blog blog5">
+        <img src="{{url_for('static', filename='images/bg/why.jpg')}}"/>
+        <h3>What are oneLinks and why to use it?</h3>
+        <p>
+            Using APIs can greatly expand the capabilities of your software applications by allowing them to interact with external services and data sources. However, it's crucial to follow best practices, adhere to the API provider's terms of use, and maintain proper error handling and security practices when working with APIs.        </p>
+    </div>
+    <div class="blog blog6">
+        <img src="{{url_for('static', filename='images/bg/girlwithphone.jpg')}}"/>
+        <h3>Benifits of Url QrShortening</h3>
+       
+        <p>
+            Space Efficiency: One of the primary benefits of URL shortening is that it reduces the length of a URL, making it shorter and more concise. This can be particularly useful in situations with character limits, such as on social media platforms like Twitter, where brevity is essential.
+
+
+Link-in-Bio
+￼Create Now
+        </p>
+    </div>
+</div> -->
+
+<div class="chotu-features">
+    <h1 class="features-title"> Your Links, Your Way </h1>
+    <p class="features-description">Experience the ultimate link management platform. our versatile tools empower your digital journey. Your links, your success – all in one place. </p>
+    <div class="chotu-features-container">
+        <div class="feature-one"> 
+            <!-- <h2> Url Shortener</h2>
+            <p> Bored of those big links well then you are at the right place, chotuurl core functionality is to shorten your links into more readable and manageable ones. Our Url Shortener is free to use</p> -->
+        </div>
+        <div class="feature-two">
+            <!-- <h2> Qr Code Generator</h2>
+            <p> Own a Wi-Fi network? Simplify visitor access with a QR code. Save time – create a Contact QR to save numbers & emails. Long URL? Shorten it with a URL QR for easy access. Discover QR code potential with our generator. Create yours today!</p> -->
+
+        </div>
+        <div class="feature-three">
+            <!-- <h2> Link-in-Bio Generator</h2>
+            <p>Seen those 'link-in-bios' on profiles? Exciting, right? No coding or hosting needed with Chotuu's generator – create them instantly, no account or cost.             </p> -->
+
+        </div>
+    </div>
+    
+</div>
+<div class="getting-started">
+    <div class="started-container">
+        <h1> Do you want to know more? </h1>
+        <a href="/faqs"><button> See FAQs </button></a>
+    </div>    
+</div>
+<div class="footer">
+    <div class="footer-container">
+      
+        <div class="links">
+            <h2> Links </h2>
+            <ul> 
+                <a href="/">  <li> Home </li> </a>
+                <a href="/about"><li> About </li></a>
+                <!-- <a href="">    <li> Contact </li></a> -->
+                <a href="/privacy">    <li> Privacy Policy </li></a>
+                <a href="/terms">     <li> Terms of use </li></a>
+            </ul>    
+        </div>
+        <div class="features">
+            <h2> Products </h2>
+            <ul>
+                <a href="/qrcodegenerator"> <li> Qr Code Generator </li> </a>
+                <a href="/shorten"> <li> Link Shortener </li> </a>
+                <a href="/custom"> <li> Custom Baclink </li> </a>
+
+                <a href="/onelinks"> <li> Link-in-Bio </li> </a>
+            </ul>   
+        </div>
+        <div class="product-info">
+            <h1 class="logo"> chotuURL</h1>
+            <p> chotuURL goes beyond being just a URL shortener; it offers advanced features for tracking link analytics, generating QR codes, and more.
+            </p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="{{url_for('static', filename='responsive.js')}}">
+
+</script>
+
+{% endblock %}

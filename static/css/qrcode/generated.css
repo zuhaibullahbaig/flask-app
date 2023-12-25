@@ -1,0 +1,37 @@
+.generated-qr{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+align-items: center;
+max-width: 700px;
+margin: 0 auto;
+}
+
+.generated-qr-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+.generated-qr-container .qr-container-image, .generated-qr-container .qr-container-links{
+    width: 40%;
+}
+
+.generated-qr-container .qr-container-image{
+    width: 300px;
+
+}
+.generated-qr-container .qr-container-links {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.generated-qr-container .qr-container-links button{
+    padding: 7px 12px ;
+    width: 150px;
+    margin: 0.4cm 0;
+    cursor: pointer;
+}

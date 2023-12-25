@@ -1,0 +1,70 @@
+{% extends 'linkinbios/base.html' %}
+
+{% block header %}
+<link rel="icon" href="{{url_for('static', filename='images/profile.ico')}}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/linkinbios/style_one.css')}}" type="text/css" />
+{% endblock %}
+
+
+{% block main %}
+<div class="main">
+    
+    {% if data is not defined %}
+    <div class="header">
+        <img src="/static/images/bg/ahmad.jpeg"/>
+        <h1> Ahmad Karim </h1>
+        <h2> Wordpress Developer </h2>
+    </div>
+    <div class="links">
+        <a href=""> X / Twitter </a>
+        <a href=""> Instagram </a>
+        <a href=""> Website </a>
+    </div>
+   
+    {% else %}
+        <div id="ad-container">
+            <div class="ad-in-container">
+                <a href=""><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/png/728%20x%2090%20px.png" /></a>
+                <h2 style="margin-top: 0.2cm;"> Ads are shown for only 10 Seconds Please Wait...</h2>
+                <a href=""><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/png/728%20x%2090%20px.png" /></a>
+                <h2 style="margin-top: 0.2cm;"> Join Adsterra and Start earning money right away</h2>
+
+           </div>
+        </div>
+        <div class="header">
+            <img src={{data.access_file}}/>
+            <h1> {{data.name}}  </h1>
+            <h2> {{data.description}} </h2>
+        </div>
+        {% for name, url in data.links.items() %}
+        <div class="links">
+            <a href={{url}} target="_blank"> {{name}} </a>
+        </div>
+        {% endfor %}      
+    {% endif %}
+   
+</div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    let timer = 10;
+    const adContainer = document.getElementById("ad-container");
+
+    function updateTimer() {
+        if (timer > 0) {
+            timer--;
+            setTimeout(updateTimer, 1000); // Update every 1 second
+        } else {
+            adContainer.style.display = "none";
+            adContainer.classList.add('ad-remove');
+        }
+    }
+
+    // Start the timer when the page loads
+    updateTimer();
+});
+
+</script>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'blogs/layout.html' %}
+
+{% block header %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/products.css')}}" type="text/css"/>
+{% endblock %}
+
+{% block main %}
+<div class="chotu-products">
+    <div class="chotu-products-head">
+        <div class="chotufirst">
+            <div class="chotu-content">
+                <h1> Url Shortener </h1>
+                <p> URL shortening is essential for many businesses. Whether you have a messy link or simply want to track its performance, with ChotuURL, you can shorten as many links as you need, and the clicks are unlimited. You can also create custom links,Custom links expire after a month. But still its a long time isn't it.  </p>
+                <h3> Link Clicks Analytics </h3>
+                <h3> Custom Links </h3>
+            </div>
+           
+        </div>
+        <div class="chotusecond">
+            <div class="chotu-content">
+                <h1> Qr Code Generator</h1>
+                <p> QR codes are undoubtedly one of the most effective marketing tools for a wide range of purposes. With ChotuURL, you have access to every possible method of editing a QR code and creating each and every type of QR code. You don't have to spend any money, unlike other options in the market. </p>
+                    <h3> Advanced Qr Code Customizations</h3>
+                    <h3> Downloadable in PNG/SVG/JPG </h3>
+                </div>
+         
+        </div>   
+    </div>
+    <div class="chotu-products-item onelinks-generator">
+        <div class="product-content">
+            <h1> Link In Bio Generator </h1>
+            <p> ChotuURL shortener also includes a link-in-bio/link list generator, which, like most other products, is also free. It's so quick and easy to create links in bios with it. Just make sure you don't create more than one.
+
+            </p>
+            <h3> 8+ Templates </h3>
+            <h3> No Account/No Money </h3>
+        </div>
+        <div class="product-image">
+            <img src="/static/images/product_images/1.png"/>
+        </div>
+    </div>
+</div>
+{% endblock %}

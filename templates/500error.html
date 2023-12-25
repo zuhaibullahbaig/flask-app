@@ -1,0 +1,17 @@
+{% extends 'blogs/layout.html'%}
+
+{% block header %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/error.css')}}" type="text/css"/>
+{% endblock %}
+
+{% block main %}
+   <div class="error-container">
+        <div class="error-image">
+            <h1>Internal Server Error</h1>
+        </div>
+        <div class="error-content">
+            <h1> some error occurred </h1>
+
+        </div>
+   </div>
+{% endblock %}

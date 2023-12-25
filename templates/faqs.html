@@ -1,0 +1,116 @@
+{% extends 'blogs/layout.html' %}
+
+{% block header %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/faqs.css')}}" type="text/css">
+{% endblock %}
+
+{% block main %}
+
+<div class="faq">
+    <h3 class="faq-title"> FAQs</h3>
+    <div class="faq-item">
+      <div class="question">
+        <h3>Why use a URL shortener? </h3>
+        <svg width="15" height="10" viewbox="0 0 42 25">
+          <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="answer">
+        <p>
+            URL shorteners like ChotuURL are used to create shorter versions of long and complex URLs. These shortened URLs are more convenient to share, especially on social media and in situations where character count is limited. They make links cleaner and more visually appealing. Additionally, URL shorteners often provide click tracking and analytics, allowing users to monitor link performance.
+
+        </p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="question">
+        <h3> How is ChotuURL better than its alternatives?        </h3>
+        <svg width="15" height="10" viewbox="0 0 42 25">
+          <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="answer">
+        <p>
+
+            ChotuURL offers several advantages over alternatives. It provides a combination of URL shortening, QR code generation, and link-in-bio creation in one platform, making it a versatile tool for digital marketing and content sharing. ChotuURL also offers custom backlinks, allowing users to create branded and memorable short links. The advanced QR code generator offers multiple ways to create and save QR codes, enhancing user flexibility. Moreover, ChotuURL offers link analytics to track link performance, which is essential for marketing campaigns.
+
+
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">
+        <h3> What are the applications of Qr Codes? </h3>
+        <svg width="15" height="10" viewbox="0 0 42 25">
+          <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="answer">
+        <p>
+            QR codes, or Quick Response codes, are versatile tools used for a variety of purposes. You can create QR codes that link to websites, contact information, or even Wi-Fi networks. 
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">
+          <h3> What are link-in-bios?        </h3>
+          <svg width="15" height="10" viewbox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="answer">
+          <p>
+            Link-in-bios is a feature that provides a single landing page with multiple links. Users can access various web resources or content by clicking on these links. Link-in-bio pages are often used on social media profiles to direct followers to multiple destinations, such as websites, products, articles, and more. ChotuURL offers a way to create link-in-bios conveniently without requiring users to log in or pay any fees.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="question">
+          <h3> Why shorten URLs with ChotuURL?        </h3>
+          <svg width="15" height="10" viewbox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="answer">
+          <p>
+            ChotuURL offers URL shortening services, making long and complex URLs more user-friendly and aesthetically pleasing. Shortened URLs are easier to share on platforms like social media, where character limits are common. Additionally, ChotuURL provides the benefit of link analytics, enabling users to track the number of clicks, traffic sources, and other vital information about their links.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="faq-item">
+        <div class="question">
+          <h3> What are custom backlinks, and why can they be helpful?        </h3>
+          <svg width="15" height="10" viewbox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="answer">
+          <p>
+            Custom backlinks are user-defined, branded, or customized short URLs created using ChotuURL. They are beneficial for several reasons. First, custom backlinks make links more recognizable, memorable, and trustworthy, as they often contain brand or keyword elements. They enhance brand visibility and promote a professional appearance. Custom backlinks can also be useful for tracking marketing campaigns, as they provide a clear connection between the link and the content or campaign it represents.
+          </p>
+        </div>
+      </div>
+
+
+     
+
+
+  </div>
+<script>
+
+const faqs = document.querySelectorAll(".faq-item");
+
+
+faqs.forEach( faq => {
+    faq.addEventListener("click", () => {
+        faq.classList.toggle('active2');
+    })
+})
+
+</script>
+{% endblock %}

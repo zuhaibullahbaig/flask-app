@@ -1,0 +1,19 @@
+{% extends './blogs/layout.html'%}
+
+{% block header %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/qrcode/generated.css')}}" type="text/css">
+{% endblock %}
+
+{% block main %}
+    <div class="generated-qr">
+        <div class="generated-qr-container">
+            <div class="qr-container-image">
+                <img src={{data.image_name}}/>
+            </div>
+            <div class="qr-container-links">
+                <button> Download Now </button>
+                <button> Create a New One </button>
+            </div>
+        </div>
+    </div>
+{% endblock %}

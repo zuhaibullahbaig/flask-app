@@ -1,0 +1,42 @@
+{% extends 'blogs/layout.html' %}
+
+{% block header %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/about.css')}}" type="text/css"/>
+{% endblock %}
+
+{% block main %}
+ <div class="about-container">
+    <h1 class="about-title">
+        About Us
+    </h1>
+   
+    <img class="about-image" src="{{url_for('static', filename='images/bg/aboutus.jpg')}}"/>
+    <p class="about-description">
+        chotuURL is a comprehensive URL shortening platform that offers free and feature-rich services, ensuring accessibility for everyone. We aim to simplify URL management while providing exceptional customer support and global accessibility.
+    </p>
+    <div class="about-main-container">
+       <div class="about-mission">
+            <h1 class="mission-title">
+                Mission
+            </h1>
+            <!-- <img class="about-image" src="{{url_for('static', filename='images/bg/mission.jpg')}}"/> -->
+            <p class="mission-description">
+                At chotuURL, we're dedicated to simplifying URL management for all. Our affordable platform offers both free and premium plans, ensuring accessibility. With a user-friendly dashboard, multiple free domains, and advanced features like link analytics, we empower users worldwide. chotuURL aims to be the trusted choice for efficient and feature-rich URL management, enhancing the digital experience for all.
+            </p>
+       </div>
+       <div class="about-mission">
+            <h1 class="mission-title">
+                Purpose
+            </h1>
+            <!-- <img class="about-image" src="{{url_for('static', filename='images/bg/purpose.jpg')}}"/> -->
+            <p class="mission-description">
+                Our purpose is to simplify and democratize URL management. We provide accessible, user-friendly solutions for individuals and businesses, allowing efficient link creation, sharing, and tracking. Our mission is to empower users globally with both free and premium plans, advanced features, and exceptional customer support.
+            </p>
+        </div>
+    </div>
+    <!-- <div class="about-founder">
+        <h2> URL shortening is vital for many businesses. Url Shorteners often cost too much, ChotuURL offers a free, all-in-one solution with onelinks, advanced QR code customizations, and more.</h2>
+        <h3> -- Zuhaib Ullah Baig -  Founder</h3>
+    </div> -->
+ </div>
+{% endblock %}

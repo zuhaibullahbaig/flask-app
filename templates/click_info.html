@@ -1,0 +1,66 @@
+{% extends 'blogs/layout.html' %}
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/click_info.css')}}" type="text/css">
+
+{% endblock %}
+{% block main %}
+<div class="link-click-counter">
+    <h1> Link Info  </h1>
+    <div class="info">
+        <div class="info-date">
+            <h2> Date Created </h2>
+            <p>{{creation_date}}</p>
+        </div>
+        <div class="info-counter">
+            <h2> Total No of Visits </h2>
+           <p> {{click_count}} Visits</p> 
+        </div>
+    </div>
+<div class="table-container">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Platform </th>
+                <th>Percentage</th>
+                <th>No of Clicks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Facebook</td>
+                <td>{{other_data.fb_percentage}}%</td>
+                <td>{{other_data.fb_count}}</td>
+            </tr>
+            <tr>
+                <td>Twitter</td>
+                <td>{{other_data.twitter_percentage}}%</td>
+                <td>{{other_data.twitter_count}}</td>
+            </tr>
+            <tr>
+                <td>Instagram</td>
+                <td>{{other_data.ig_percentage}}%</td>
+                <td>{{other_data.ig_count}}</td>
+            </tr>
+            <tr>
+                <td>Others</td>
+                <td>{{other_data.other_percentage}}%</td>
+                <td>{{other_data.other_count}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    <div class="orginal">
+        <h2> Original Url </h2>
+        <p style="word-wrap:break-word;"> {{original_url}} </p> 
+    </div>
+    <!-- <div style="width: 400px; height: 400px;">
+        <canvas id="myPieChart"></canvas>
+    </div> -->
+</div> 
+<script>
+
+</script>
+{% endblock %}

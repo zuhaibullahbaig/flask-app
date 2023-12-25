@@ -1,0 +1,68 @@
+.link-click-counter{
+    max-width: 700px;
+    margin: 2cm auto;
+    min-height: 50vh;
+    text-align: center;
+}
+
+.info{
+    display: flex;
+    margin: 1cm auto;
+    max-width: 700px;
+    justify-content: space-between;
+}
+
+.link-click-counter h1{
+    font-family: 'Young Serif', serif;
+    font-size: 34px;
+    font-weight: 300;
+}
+.link-click-counter h2{
+    font-size: 28px;
+}
+
+.link-click-counter p{
+    font-size: 23px;
+}
+
+
+table{
+    width: 700px;
+    margin: 0.5cm auto;
+    max-width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+}
+
+table th{
+    font-size: 22px;
+    color: white;
+    background-color: black;
+}
+
+
+table th, table td{
+    padding: 5px 2px;
+}
+
+table td{
+    background-color: rgb(230, 209, 209);
+}
+
+@media  screen and (max-width:600px) {
+    
+    table{
+        font-size: 16px;
+    }
+    table th{
+        font-size: 16px;
+    }
+    table{
+        width: 100%;
+    }
+
+    .link-click-counter h2{
+        font-size: 23px;
+    }
+}

@@ -1,0 +1,51 @@
+{% extends '/blogs/layout.html' %}
+
+{% block header %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/intro.css')}}"/>
+{% endblock %}
+
+{% block main %}
+<div class="one-links">
+    <h1 class="one-link-title">  Link-In-Bio<sub style="font-size: 22px;">-experimental</sub> </h1>
+    <p class="one-link-description"  style="padding: 10px;">Seen those 'link-in-bios' on profiles? Exciting, right? No coding or hosting needed with Chotuu's generator – create them instantly, no account or cost. Just avoid multiple profiles for one person. This free service aims to prevent excessive 'link-in-bios.' Creating too many may lead to account deletion; contact us if needed. Review our guidelines and policies before use.</p>
+    
+    <div class="guidelines">
+        <h1 style="text-align: center; margin: 0.6cm 0cm;"> Guidelines<span style="font-size:22px; color: blueviolet;">-must read</span></h1>
+        <div class="guideline">
+            <li>Ensure that your content is error-free with no spelling mistakes. </li>
+        </div>
+        <div class="guideline">
+            <li>Multiple profiles are not allowed; you'll lose both. Your first profile is the only one permitted.</li>
+        </div>
+
+        <div class="guideline">
+            <li>Utilize appropriate titles for links, ensuring they are concise and descriptive. </li>
+        </div>
+
+        <div class="guideline">
+            <li>You must have a minimum of 3 links and a maximum of 6. </li>
+        </div>
+
+        <div class="guideline">
+            <li>This feature is designed for those who need it. We will provide a statistics option for tracking link clicks and other data. Poor performance of your link-in-bio may result in its deletion.</li>
+        </div>
+
+       
+
+    </div>
+    <h1 class="one-link-title" style="margin: 0.5cm 0; font-size: 26px;">This is how our link-in-bios look like </h1>
+    <div class="templates">
+        <img src="/static/images/template_pics/template1.png">
+        <img src="/static/images/template_pics/template5.png">
+        <img src="/static/images/template_pics/template3.png">
+
+    </div>
+
+    <p class="one-link-description"  style="padding: 10px;">We are soon bringing an application to create fully customizable link-in-bios, resumes, forms and more. Stay updated, keep an eye on our Blog..</p>
+    <p class="one-link-description"  style="padding: 10px;"> Ok enough talking, lets start creating your link-in-bio. Please make sure to write everything correctly and use a good picture. Dont regret it later. Dont hesitate to contact us if any issue occurs</p>
+    <div class="button-container">
+       <a href="/onelinks/generator"> <button> Create Now </button> </a>
+    </div>
+</div>
+
+{% endblock %}

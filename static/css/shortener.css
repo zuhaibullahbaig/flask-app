@@ -1,0 +1,173 @@
+.shortener{
+    max-width: 1000px;
+    margin: 1.3cm auto;
+}
+
+
+
+
+.shortener{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 80vh;
+    justify-content: center;
+}
+
+.shortener-form {
+    max-width: 800px;
+
+    margin: 0 auto;
+    text-align: center;
+
+} 
+
+.shortener-form button{
+    padding: 8px 7px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    width: 80px;
+
+    cursor: pointer;
+    background-color: #003566;
+    font-weight: 1000;
+
+}
+
+.shortener-form button:hover{
+    background-color: #001D3D;
+}
+.shortener-form input {
+    padding: 8px;
+    width: 70%;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #001D3D ;
+    font-weight: bolder;
+    border-color: #003566 ;
+}
+
+.shortener-form h1{
+    margin: 10px 0;
+    font-weight: bolder;
+    color: #b99a00;
+
+    font-family: 'Young Serif', serif;
+}
+
+.shortener-form h2{
+    margin: 10px 0;
+    font-weight: bolder;
+    color: #003566;
+    font-family: 'Young Serif', serif;
+}
+
+/* MESSAGe */
+
+.message h2{
+    font-size: 23px;
+    color: gray;
+    font-weight: bolder;
+    font-family: 'Raleway', sans-serif;
+}
+.message {
+    margin-top: 1cm;
+}
+
+/* URL CREATED */
+
+.url-created{
+    width: 100%;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 1cm;
+    background-color: #001D3D;
+    color: #b99a00;
+    align-items: center;
+}
+
+.url-created a{
+    margin: 0 0.3cm;
+}
+
+.url-created i{
+    margin: 0 0.3cm;
+    cursor: pointer;
+}
+
+.url-created i:hover{
+    color: #b1a466;
+}
+
+/* URL STATS */
+
+.url-stats{
+    width: 100%;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 1cm;
+    background-color: #001D3D;
+    color: #b99a00;
+    align-items: center;
+}
+
+.url-stats p{
+    color: white;
+}
+
+.url-stats-container{
+    display: flex;
+    margin-top: 0.3cm;
+}
+
+.url-stats-container a{
+    padding: 0 20px;
+}
+
+.url-stats-container i:hover{
+    color: #b1a466;
+
+}
+
+@media screen and (max-width:600px) {
+    .shortener{
+        padding: 5px 5px;
+        overflow-x: hidden;
+    }
+    .url-created{
+        font-size: 20px;
+        width: 90%;
+    }
+    .url-stats{
+        font-size: 20px;
+        width: 90%;
+
+    }
+    .shortener-form input{
+        width: 90%;
+    }
+    .shortener-form button{
+        width: 60%;
+        display: block;
+        margin: 0.5cm auto;
+    }
+  
+}
+
+
+@media screen and(max-width:400px) {
+    a{
+        width: 85%;
+        font-size: 18px;
+    }
+}

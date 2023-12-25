@@ -1,0 +1,127 @@
+.blogs{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2cm;
+}
+.main-blog{
+    display: flex;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+.main-blog-content{
+    padding: 10px;
+    line-height: 0.7cm;
+}
+
+.main-blog-content h1{
+    color: #003566 ;
+    font-size: 24px;
+    margin-bottom: 0.4cm;
+}
+
+.main-blog-content p{
+    margin-bottom: 0.4cm;
+    font-size: 17px;
+}
+
+.main-blog-content button{
+    font-size: 17px;
+    padding: 5px 10px;
+    background-color: #003566;
+    color: white;
+    cursor: pointer;
+
+    border-radius: 5px;
+}
+.main-blog-pic img{
+    min-width: 300px;
+    height: 300px
+}
+
+/* BLOG LIST */
+
+
+.blog-list{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.blog-list .blog{
+    min-width: 300px;
+    width: 30%;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 1cm auto;
+}
+
+.blog-list .blog img{
+    width: 100%;
+}
+
+.blog-list .blog h3{
+    color: #003566;
+    font-size: 19px;
+}
+
+.blog-list .blog p{
+        display: -webkit-box;
+        width: 100%;
+        font-size: 17px;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+}
+
+.blog-list .blog button{
+    padding: 3px 6px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+    background-color: #003566;
+    margin-top: 0.4cm;
+}
+
+
+/* CONTROL BUTTONS */
+
+.control-buttons button{
+    padding: 5px 10px;
+    width: 100px;
+    background-color: whitesmoke;
+    color: #003566;
+    border-color: whitesmoke;
+
+
+}
+
+.control-buttons{
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 2cm;
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .blogs{
+        margin-top: 0.2cm;
+    }
+    .main-blog{
+        flex-wrap: wrap;
+        margin-top: 0.1cm;
+    }   
+    .main-blog img{
+        width: 100%;
+    }
+    .blog-list .blog{
+        width: 90%;
+    }
+    .control-buttons {
+        margin-top: 1cm;
+    }
+}

@@ -1,0 +1,100 @@
+{% extends 'blogs/layout.html' %}
+
+{% block header %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/qrcode.css')}}" type="text/css">
+{% endblock %}
+
+{% block main %}
+ <div class="select-qr-code">
+    <!-- <p style="font-size: 20px; font-weight: bold; margin-bottom: 1cm;">  -->
+    <h3 class="qrcode-title">  Qr Code </h3>
+    <p class="qrcode-description"  style="padding: 10px;">Explore QR codes for marketing and more. Simplify Wi-Fi access, protect contact info, shorten URLs, and create SMS, email, and geolocation QR codes. Organizing an event? Generate event QR codes. Unleash QR code potential with our generator. Create yours today!
+
+
+    </p>
+    <h2 style="padding: 10px;margin-bottom: 0.8cm; font-weight: bolder; font-size: 22px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"> Dont Worry about your data while using our QR Code Generator. Your data is kept on the browser and never sent to the server. </h2>
+    <h1 style="color: #003566; font-weight: bold; font-family: 'Young Serif';"> Now go ahead and select the type of QR you want to create </h1>
+    <div class="type-selection">
+        <a href="/qrcodegenerator/url"><div class="type-selection-item">
+            <div class="selection-item-head">
+                <i class="fas fa-link"></i>
+                <h2>  Link/URL QR Code </h2>
+            </div>
+            <div class="selection-item-main">
+                <p style="color: black;">Create a QR code for a link.</p>
+            </div>
+        </div> </a>
+      <a href="/qrcodegenerator/wifi_qr">  <div class="type-selection-item">
+            <div class="selection-item-head">
+                <i class="fas fa-wifi"></i>
+                <h2> WiFi Network QR Code </h2>
+            </div>
+            <div class="selection-item-main">
+                <p style="color: black;">WiFi QR Code for fast connection. </p>
+
+            </div>
+        </div>
+    </a>
+    <a href="/qrcodegenerator/contact_qr">  <div class="type-selection-item">
+            <div class="selection-item-head">
+                <i class="fas fa-address-card"></i>
+                <h2> Contact Information QR Code </h2>
+            </div>
+            <div class="selection-item-main">
+                <p style="color: black;"> Generate a contact QR code.</p>
+
+            </div>
+        </div>
+        </a>
+        <a href="/qrcodegenerator/email_qr">
+        <div class="type-selection-item">
+            <div class="selection-item-head">
+                <i class="fas fa-envelope"></i>
+                <h2>  Email QR Code </h2>
+            </div>
+            <div class="selection-item-main">
+                <p style="color: black;">Email QR code with pre-filled dist email.</p>
+    
+            </div>
+        </div>
+    </a>
+        <a href="/qrcodegenerator/sms_qr">
+        <div class="type-selection-item">
+            <div class="selection-item-head">
+                <i class="fas fa-comment"></i>
+                <h2>  SMS QR Code </h2>
+            </div>
+            <div class="selection-item-main">
+                <p style="color: black;"> Create an SMS QR with preset message. </p>
+    
+            </div>
+        </div>
+    </a>
+    <a href="/qrcodegenerator/event_qr">
+        <div class="type-selection-item">
+            <div class="selection-item-head">
+                <i class="fas fa-calendar-alt"></i>
+                <h2>  Event QR Code </h2>
+            </div>
+            <div class="selection-item-main">
+                <p style="color: black;"> Event QR Code: Date, Time, Location. </p>
+    
+            </div>
+        </div>
+    </a>
+        <a href="/qrcodegenerator/location_qr">
+        <div class="type-selection-item">
+            <div class="selection-item-head">
+                <i class="fas fa-map-marker-alt"></i>
+                <h2>   Geolocation QR Code </h2>
+            </div>
+            <div class="selection-item-main">
+                <p style="color: black;"> Code for location on a map </p>
+    
+            </div>
+        </div>
+    </a>
+        
+    </div>
+ </div>
+{% endblock %}

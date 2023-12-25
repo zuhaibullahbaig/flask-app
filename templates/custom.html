@@ -1,0 +1,33 @@
+{% extends 'blogs/layout.html' %}
+
+{% block header %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/custom.css')}}">
+{% endblock %}
+{% block main %}
+    <div class="track-link">
+        <h1 style="margin-bottom: 0.4cm;"> What are custom backlinks?  </h1>
+        <p> Well when you shorten a link with our url shortener, you may have seen that the backlink after the domain consists of 6 random ascii characters. 
+            Maybe you want to use your own backlink that represents your company and your link pretty well. A link like <span style="color: red;"> https://chotuurl.com/your-brand-name.    </span>
+               </p>
+        <h1 style="font-size: 25px; margin-top: 0.6cm;"> Reaaally? </h1>
+        <p> Yeah, with ChotuURL being a go-to source for people, we don't charge any money; you can create custom backlinks for free. But, hold on, there is a limit: your custom links will expire in 30 days.
+            but Its a long time isn't it. And for thirty days we will be giving you link clicks and other statistics.
+
+            its so good for things like forms, marketing campaigns and other things that stay for under a month. If we are hiring people for ChotuURL, and the process lasts for 21 days, we will shorten a link which goes like https://chotuurl.com/chotu_form..
+
+        <form action="/custom" method="POST">
+            <input type="text" placeholder="your custom url..." name="custom-url"/>
+            <button> Search </button>
+            {% if green %}
+            <p style="margin-top: 0.5cm; color: green;">{{message}}</p>
+            {% endif %}
+            {% if red %}
+            <p style="margin-top: 0.5cm; color: red;">{{message}}</p>
+            {% endif %}
+        </form>
+
+        {% if data %}
+           <a href={{data}}> <button>Proceed</button></a>
+        {% endif %}
+    </div>
+{% endblock %}

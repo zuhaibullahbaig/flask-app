@@ -1,0 +1,96 @@
+{% extends 'blogs/layout.html' %}
+
+{% block header %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/shortener.css')}}" type="text/css"/>
+{% endblock %}
+
+{% block main %}
+<div class="shortener">
+    <div class="shortener-container">
+        <form class="shortener-form" method='POST' action="/shorten">
+            <h1> chotuURL : URL SHORTENER</h1>
+            <h2> Shorten your url in seconds </h2>
+            <input type="text" placeholder={{message.link}} name="link">
+            <button> Shorten </button>
+            {% if message.message %}
+                <div class="message">
+                  <h2>  Wrong URL - Make sure you have written the url correctly </h2>
+                </div>
+            {% endif %}
+            {% if message.new_url %}
+            <div class="url-created">
+                <a href={{message.new_url}} target="_blank" id="url"> {{message.new_url}}</a>
+                <i class="fa fa-copy" id="copy"></i>
+
+
+            </div>
+            <p style="margin-top: 0.4cm; font-size: 20px; color: black; font-weight: bolder;" id="newone"></p>
+            <div class="url-stats">
+                <p> Track your link clicks from here </p>
+                <div class="url-stats-container">
+                    <a href={{message.link_stats}} target="_blank" id="copyurl"> {{message.link_stats}}</a>
+                <i class="fa fa-copy" id="copy-link" style="cursor: pointer;"></i>
+                </div>
+                
+            </div>
+            <p style="margin-top: 0.4cm; font-size: 24px; color: black; font-weight: bolder;" id="newonestats"></p>
+
+            {% endif %}
+        </form>
+    </div>
+</div>
+
+
+<script>
+
+    function copyUrlToClipboard() {
+        var urlElement = document.getElementById("url");
+        var textArea = document.createElement("textarea");
+        
+        textArea.value = urlElement.textContent;
+        
+        document.body.appendChild(textArea);
+        
+        textArea.select();
+        
+        document.execCommand('copy');
+        
+        document.body.removeChild(textArea);
+        
+        var newone = document.getElementById('newone');
+    newone.innerText = 'copied'
+
+    var pastone = document.getElementById('newonestats');
+        pastone.innerText = ''
+    }
+
+    var copyButton = document.getElementById("copy");
+    copyButton.addEventListener("click", copyUrlToClipboard);
+
+    function copystatsUrlToClipboard() {
+        var urlElement = document.getElementById("copyurl");
+        var textArea = document.createElement("textarea");
+        
+        textArea.value = urlElement.textContent;
+        
+        document.body.appendChild(textArea);
+        
+        textArea.select();
+        
+        document.execCommand('copy');
+        
+        document.body.removeChild(textArea);
+        
+        var newone = document.getElementById('newonestats');
+        newone.innerText = 'copied'
+
+        var pastone = document.getElementById('newone');
+        pastone.innerText = ''
+    }
+
+    var copyButton = document.getElementById("copy-link");
+    copyButton.addEventListener("click", copystatsUrlToClipboard);
+
+  
+</script>
+{% endblock %}

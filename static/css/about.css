@@ -1,0 +1,78 @@
+.about-container{
+    max-width: 1200px;
+    margin: 2cm auto;
+}
+
+.about-title{
+    font-size: 32px;
+    font-family: 'Young Serif', serif;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 0.5cm;
+    border-bottom: 3px solid #003566;
+
+    color: #003566;
+}
+
+.about-description{
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 0.7cm;
+}
+.about-image{
+    width: 100%;
+    margin-bottom: 0.5cm;
+}
+
+
+/* mission */
+
+
+.mission-title{
+    font-size: 32px;
+    font-family: 'Young Serif', serif;
+    font-weight: 200;
+    text-align: center;
+    color: #003566;
+    border-bottom: 3px solid #003566;
+    margin-top: 2cm;
+    margin-bottom: 0.5cm;
+
+}
+
+.mission-description{
+    font-size: 19px;
+    font-weight: bolder;
+    line-height: 0.7cm;
+}
+p{
+    font-weight: bolder;
+}
+/* ABOUT MAIN_container */
+
+.about-main-container{
+    display: flex;    
+    justify-content: space-between;
+}
+
+
+.about-main-container div{
+    width: 45%;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .about-container{
+        width: 90%;
+    }
+    .about-main-container{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-main-container div{
+        width: 100%;
+
+    }
+}

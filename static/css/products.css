@@ -1,0 +1,99 @@
+
+.footer{
+    margin-top: 0;
+}
+.chotu-products{
+    max-width: 1200px;
+    padding: 5px 10px;
+    margin: 0 auto;
+    margin-top: 2cm;
+
+}
+
+.chotu-products h1{
+    font-family: 'Young Serif';
+    font-size:27px;
+    color: #1b4b77;
+}
+.chotu-products p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    line-height: 0.9cm;
+    color: black;
+    font-size: 19px;
+    padding-right: 25px;
+}
+.chotu-products h3{
+    padding: 9px 13px;
+    font-family: 'Raleway';
+    background-color: #1b4b77;
+    color: white;
+    margin: 0.3cm 0cm;
+    width: 75%;
+    border-radius: 5px;
+}
+.chotu-products-item{
+    margin-bottom: 2cm;
+    display: flex;
+}
+.chotu-products-head{
+    display: flex;
+    max-width: 1200px;
+    margin-bottom: 2cm;
+}
+.chotusecond , .chotufirst{
+    width: 50%;
+    min-height: 300px;
+}
+
+
+
+.chotu-image {
+    width: 100%;
+
+}
+
+.chotu-image img{
+    width: 100%;
+}
+.qr-code-generator{
+    flex-direction: column;
+}
+.product-content{
+    width: 40%;
+    padding-top: 1cm;
+}
+.product-image {
+
+    width: 60%;
+}
+.product-image img{
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width:600px) {
+    .chotu-products{
+        margin-top: 0.3cm;
+    }
+    .chotu-products-head{
+        flex-wrap: wrap;
+    }
+    .chotu-products-item {
+        flex-wrap: wrap;
+        margin-top: 1cm;
+    }
+    .chotu-products-item div{
+        width: 100%;
+    }
+    .chotusecond , .chotufirst{
+        width: 100%;
+        min-height: 300px;
+        margin-top: 2cm;
+    }
+    .product-image{
+        width: 100%;
+        margin-top: 0.5cm;
+    }
+}

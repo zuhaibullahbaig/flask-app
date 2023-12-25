@@ -1,0 +1,48 @@
+ .generated_onelink{
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.generated_onelink_container{
+    padding: 10px;
+}
+.generated_onelink h1{
+    font-family: 'Young Serif';
+    font-size: 30px;
+    text-align: center;
+}
+
+.generated_onelink p{
+    font-family: 'Roboto';
+    font-size: 20px;
+    white-space: normal;
+    min-width: 200px;
+}
+
+.generated_onelink #url{
+    color: white;
+    padding: 12px 25px;
+    margin: 0.3cm 0;
+    text-align: justify;
+    background-color: #02023a;
+}
+
+.generated_onelink button{
+    padding: 6px 13px;
+    cursor: pointer;
+    border: 2px solid black;
+    font-weight: bolder;
+    font-size: 18px;
+    background-color: #b3d40c;
+}
+
+.generated_onelink button:hover{
+    background-color: #d4ff00;
+}
+
+#url{
+    word-wrap:break-word;
+}   

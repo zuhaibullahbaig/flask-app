@@ -1,0 +1,131 @@
+{% extends 'blogs/layout.html' %}
+
+{% block header %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/onelinks.css')}}"/>
+{% endblock %}
+
+{% block main %}
+<div class="one-links">
+    
+    <h1 class="one-link-title" style="font-size: 26px; margin-top:1.5cm;">  Lets start building one for you</h1>
+
+    <form class="one-links-form" method="POST" action="/onelinks/generator"  enctype="multipart/form-data">
+        <p class="one-link-description"  style="padding: 10px;"> An image, name and a description are more than important. The picture below show how they will be placed in your one-link.      <br> <br> Use an image whose length is slightly greater than its width.        </p>
+        <div class="name-description">
+            <div class="name-description-image">
+                <img src="/static/images/bg/nammee.jpg"/>
+            </div>
+            <div class="name-description-links">
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="description" placeholder="Description">
+                <label for="file" class="custom-button">Choose Your Profile</label>
+                <input type="file" id="file" class="hidden" name='profile-image' onchange="updateFileName(this)">
+                <p>Image Name: <span id="file-name"></span></p>
+
+            </div>
+        </div>
+
+        <h1 class="one-link-title" style="font-size: 23px; margin-top:1.5cm;">  Time For Your Links Now </h1>
+        <p class="one-link-description" style="padding: 10px;">     A minimum of three links is what we believe to be important for everyone. Please write your links down below with an appropriate title for each.
+        </p>
+
+        <div class="links-input">
+            <p class="link-description"> Link One   </p>
+            <input type="text" name="link_one_name" placeholder="Link Name">
+            <input type="text" name="link_one_url" placeholder="Link Url">
+
+            <p class="link-description"> Link Two   </p>
+
+            <input type="text" name="link_two_name" placeholder="Link Name">
+            <input type="text" name="link_two_url" placeholder="Link Url">
+
+            <p class="link-description"> Link Three   </p>
+
+            <input type="text" name="link_three_name" placeholder="Link Name">
+            <input type="text" name="link_three_url" placeholder="Link Url">
+            <div id="new-links">
+
+            </div>
+        </div>
+        <div class="links-btns">
+            <div id="add_link">Add Link</div>
+            <div id="remove_link">Remove Link</div>    
+        </div>
+       
+
+        <input type="number" name="noofcount" style="display: none;" id="noofcount" value="0">
+
+        <h1 class="one-link-title" style="font-size: 23px; margin-top:1.5cm;">  Final-Step: Select Your Template </h1>
+        <p class="one-link-description" style="padding: 10px;"> click on the eye icon below the template for preview. To select a template click on its picture and you will see the color of the dot changing </p>
+     
+        <select id="templateSelector" style="display: none;" name="template_name">
+            <option value="template_1">Template 1</option>
+            <option value="template_2">Template 2</option>
+            <option value="template_3">Template 3</option>
+            <option value="template_4">Template 4</option>
+            <option value="template_5">Template 5</option>
+
+        </select>
+
+        <div class="template-selection">
+            <div class="template-selection-item">
+                <div class="selection-item-image">
+                    <img src="/static/images/template_pics/template4.png" id="template_1"/>
+                </div>
+                <div class="selection-item-icons">
+                    <i class="fa fa-circle" id="icon1"></i>
+                    <a href="/onelinks/template_one" target="_blank"> <i class="fas fa-eye" ></i> </a>
+
+                </div>
+            </div>
+
+            <div class="template-selection-item">
+                <div class="selection-item-image">
+                    <img src="/static/images/template_pics/template2.png" id="template_2"/>
+                </div>
+                <div class="selection-item-icons">
+                    <i class="fa fa-circle" id="icon2"></i>
+                    <a href="/onelinks/template_two" target="_blank"> <i class="fas fa-eye" ></i> </a>
+                </div>
+            </div>
+            <div class="template-selection-item">
+                <div class="selection-item-image">
+                    <img src="/static/images/template_pics/template3.png" id="template_3"/>
+                </div>
+                <div class="selection-item-icons">
+                    <i class="fa fa-circle " id="icon3"></i>
+                    <a href="/onelinks/template_three" target="_blank"> <i class="fas fa-eye" ></i> </a>
+                </div>
+            </div>
+            <div class="template-selection-item">
+                <div class="selection-item-image">
+                    <img src="/static/images/template_pics/template1.png" id="template_4"/>
+                </div>
+                <div class="selection-item-icons">
+                    <i class="fa fa-circle " id="icon4"></i>
+                   <a href="/onelinks/template_four" target="_blank"> <i class="fas fa-eye" ></i> </a>
+                </div>
+            </div>
+            <div class="template-selection-item">
+                <div class="selection-item-image">
+                    <img src="/static/images/template_pics/template5.png" id="template_5"/>
+                </div>
+                <div class="selection-item-icons">
+                    <i class="fa fa-circle " id="icon4"></i>
+                   <a href="/onelinks/template_five" target="_blank"> <i class="fas fa-eye" ></i> </a>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="sub-button">
+            <button> Generate My Page </button>
+        </div>
+    </form>
+</div>
+<script src="{{url_for('static', filename='onelinks.js')}}" type="text/javascript">
+   
+</script>
+
+{% endblock %}

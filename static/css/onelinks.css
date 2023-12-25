@@ -1,0 +1,265 @@
+   .one-links{
+    min-height: 90vh;
+    max-width: 1200px;
+    margin: 0.5cm auto;
+    padding: 8px;
+   }
+  
+   .one-link-title{
+      text-align: center;
+      font-size: 35px;
+      font-weight: bold;
+      font-family: 'Young Serif', serif;
+
+   }
+
+   .one-link-description{
+      font-size: 19px;
+      margin: 0.3cm auto;
+      text-align: center;
+      font-weight: bold;
+      width: 80%;
+      
+   }
+   .one-links-form{
+      text-align: center;
+
+   }
+   .link-description{
+      font-size: 20px;
+      padding: 5px 0;
+      font-weight: bolder;
+      margin-top: 0.3cm;
+      text-align: left;
+      width: 90%;
+      font-family: 'Young Serif', serif;
+      margin: 0.3cm auto;
+      color: #0056b3;
+      padding-left: 10px;
+   }
+   .one-links-form input{
+      width: 45%;
+      padding: 10px ;
+      margin: 5px auto;
+      border: 2px solid black;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight:  bold;
+   }
+
+   .links-input input{
+      width: 45%;
+   }
+
+
+   .links-btns{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+   }
+   .hidden{
+      display: none;
+   }
+   .custom-button{
+      padding: 7px 14px;
+      border: 1px solid black;
+      margin-top: 0.4cm;
+      width: 90%;
+      border-radius: 5%;
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #007bff;
+   }
+   .custom-button:hover{
+      background-color: #0056b3;
+   }
+  /* .link description designing */
+
+   .name-description{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+   .name-description div{
+      width: 45%;
+      min-width: 280px;
+
+   }
+   .name-description-image img{
+      width: 100%;
+      min-width: 280px;
+   }
+   .name-description-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+   .name-description-links input{
+      width: 100%;
+   }
+   .name-description-links p{
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 0.5cm;
+   }
+   /* BUTTONS  */
+   #add_link{
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+  
+      margin-top: 0.5cm;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 40%;
+      font-size: 16px;
+      font-weight: bold;
+   }
+   #remove_link{
+      padding: 10px 20px; 
+      background-color: #c94a4a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+  
+      margin-top: 0.5cm;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 40%;
+      font-size: 16px;
+      font-weight: bold;
+   }
+   #remove_link:hover{
+      background-color: #c90b0b;
+      
+   }
+   #add_link:hover{
+      background-color: #0056b3;
+
+   }
+
+   /* TEMPALTE SELCTION */
+
+   .template-selection{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      margin-top: 0.6cm;
+      max-width: 700px;
+      align-items: center;
+      justify-content: space-around;
+   }
+   .template-selection .template-selection-item{
+      max-width: 100px;
+      margin-bottom: 0.5cm;
+      padding:10px;
+      border: 2px solid rgb(226, 207, 207);
+      border-radius: 10%;
+   }
+   .template-selection .template-selection-item .selection-item-image img{
+      width: 100%;
+      cursor: pointer;
+   }
+
+   .template-selection .template-selection-item .selection-item-icons{
+      display: flex;
+      font-size: 25px;
+      justify-content: space-around;
+      margin: 0.3cm 0;
+   }
+   .template-selection .template-selection-item .selection-item-icons .fa-eye:hover{
+      color: #0056b3;
+      cursor: pointer;
+   }
+
+   .sub-button button{
+      padding: 7px 14px;
+      background-color: #c94a4a;
+      border: 1px solid black;
+      margin-top: 1cm;
+      color: black;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+   }
+   .sub-button button:hover{
+      background-color: #c90b0b;
+   }
+
+   .active{
+      color: #0056b3;
+   }
+   @media screen and (max-width:600px) {
+
+   .name-description{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+   .name-description div{
+      width: 95%;
+      min-width: 280px;
+
+   }
+   .name-description-image img{
+      width: 100%;
+      min-width: 280px;
+   }
+   .name-description-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+   .name-description-links input{
+      width: 90%;
+   }
+
+
+   .one-link-description{
+      font-size: 19px;
+      margin: 0.3cm auto;
+      text-align: center;
+      font-weight: bold;
+      width: 99%;
+      
+   }
+   .one-links-form{
+      text-align: center;
+
+   }
+   .link-description{
+      font-size: 20px;
+      padding: 5px 0;
+      font-weight: bolder;
+      margin-top: 0.3cm;
+      text-align: left;
+      width: 90%;
+      font-family: 'Young Serif', serif;
+      margin: 0.3cm auto;
+      color: #0056b3;
+      padding-left: 10px;
+   }
+   .one-links-form input{
+      width: 90%;
+      padding: 10px ;
+      margin: 5px auto;
+      border: 2px solid black;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight:  bold;
+   }
+   .links-btns{
+      flex-wrap: wrap;
+   }
+   #add_link{
+      width: 90%;
+   }
+   #remove_link{
+      width: 90%;
+   }
+}

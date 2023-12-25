@@ -1,0 +1,19 @@
+.track-link{
+    min-height: 80vh;
+    max-width: 1200px;
+    margin: 0.5cm auto;
+    padding: 5px 10px;
+}
+
+.track-link h1{
+    font-family: 'Young Serif';
+    font-size: 35px;
+    font-weight: light;
+    text-align: center;
+}
+
+.track-link p{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 0.7cm;
+}

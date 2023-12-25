@@ -1,0 +1,269 @@
+
+.qrcodegenerator{
+    max-width: 1200px;
+    margin: 2cm auto;
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* FORM */
+
+.qrcodemain{
+    max-width: 800px;
+}
+.form {
+    margin: 0cm auto;
+    
+    max-width: 800px;
+}
+.url-input {
+    width: 94%;
+    padding: 10px ;
+    margin: 5px auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight:  bold;
+}
+.color-input{
+    width: 100%;
+    margin-bottom: 0.5cm;
+    margin-top: 0.2cm;
+}
+.form {
+    text-align: left;
+}
+
+
+/* QR COE COLOR */
+
+.qrcode-colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.qrcode-colors div{
+    min-width: 400px;  
+    max-width: 100%;  
+    margin: 0px 5px;
+}
+.qrcode-colors div input{
+    width: 100%;
+}
+
+
+
+.qrcode-main-btns{
+    display: flex;
+    margin-bottom: 0.5cm;
+    justify-content: space-between;
+}
+
+.go-back{
+    padding: 10px 20px; 
+     background-color: #c94a4a;
+      color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.go-back:hover{
+    background-color: #c90b0b;
+}
+
+#generate {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#generate:hover {
+    background-color: #0056b3;
+}
+
+/* COLORS */
+
+.generator-title{
+    text-align: center;
+    margin-bottom: 0.4cm;
+    margin-top: 1cm;
+}
+
+/*  */
+
+.generated-qr{
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    align-items: center;
+    height: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+}
+
+.generated-qr-active{
+    display: none;
+}
+
+.options-active {
+    filter: blur(15px); /* Adjust the blur amount as needed */
+  }
+
+.generated-qr i{
+    position: absolute;
+    right: 0%;
+    padding: 3px 5px;
+    top: 0%;
+    cursor: pointer;
+    font-size: 25px;
+    color: black;
+    background-color: #007bff;
+}
+.generated-qr-container{
+    width: 310px;
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+   
+}
+
+.generated-qr-container svg{
+    width: 100%;
+    padding: 5px 5px;
+}
+.generated-qr-container button{
+    width: 100%;
+    margin-top: 0.4cm;
+    padding: 10px 20px;
+}
+
+.generated-qr-container button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underlines from links */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded button corners */
+    font-size: 16px; /* Button text size */
+    font-weight: bold;
+    cursor: pointer; /* Show hand cursor on hover */
+  }
+  
+  /* Hover effect for the button */
+  .generated-qr-container button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+  }
+  
+
+  /* DOWNLOAD SECtIon */
+  .download-section {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .download-section select{
+    padding: 4px 8px;
+    font-size: 18px;
+    font-weight: bolder;
+  }
+
+
+  /* MAIN QR DESIGN */
+ .qr-code-style{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ .qr-code-style h3{
+    text-align: center;
+ }
+ .qr-code-style-item-one{
+    width: 50%;
+    min-width: 300px;
+ }
+ .qr-code-style-item-two{
+    width: 40%;
+ }
+ .qr-code-style-item-three{
+    width: 25%;
+    min-width: 300px;
+ }
+  .main-qr-style {
+    display: flex;
+    margin: 0.2cm 0;
+    margin-bottom: 0.4cm;
+    justify-content: space-around;
+  }
+  .main-qr-style img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    padding: 1px;
+    border-radius: 25%;
+
+  }
+  .main-qr-style img:hover{
+    background-color: #007bff;
+  }
+  .main-qr-style .img-active{
+    border: 2px solid black;
+    background-color: #0056b3;
+    border-radius: 25%;
+  }
+
+  .main-qr-style .img-active:hover{
+    background-color: #0056b3;
+  }
+  .dots-selection-select {
+    display: none;
+  }
+  
+  @media  screen and (max-width: 600px) {
+    
+  
+
+        .qr-code-style-item{
+            width: 100%;
+        }
+        .main-qr-style{
+
+            justify-content: space-around;
+        }
+        
+      
+        .qrcodegenerator{
+            padding: 5px 5px;
+            margin: 0.5cm;
+        }
+        
+    }
+
+
+    @media screen and (max-width:400px) {
+        .main-qr-style img{
+            width: 40px;
+            height: 40px;
+        }
+        .qrcode-colors div{
+            min-width: 200px;
+            width: 100%;
+        }
+    }
